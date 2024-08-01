@@ -1,0 +1,10 @@
+Kubernetes Pre-requist : Containers, YAML, 
+
+Technical query : https://kodekloud.com/community/c/kubernetes/6
+
+Course resource : https://kodekloud.com/kk-media/image/upload/v1702467192/course-resource-new/KubernetesForBeginners-MumshadMannambeth-2.pdf
+
+Kubernetes Overview : 
+
+1. Also known as K8's 
+

@@ -1,0 +1,5 @@
+Components Present when Kubernetes is installed : 
+
+1. API server - Responsible for the user interface (frontend) interaction happens through API Server 
+
+2. 

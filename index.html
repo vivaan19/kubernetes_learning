@@ -1,0 +1,466 @@
+<ul class="TranscriptList_lazy_module_list__7d528c68" id="transcript-list" data-component-type="loaded-transcript"
+    tabindex="0" role="listbox" aria-label="Transcript List" aria-multiselectable="false" style="height: 4516px;">
+    <li role="option" id="transcript-cue-0"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_isCurrentTime__1137d3b4"
+        aria-selected="false" style="transform: translateY(0px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Hello and welcome to this lecture on
+            Kubernetes overview. In this lecture, We will go through an overview of Kubernetes.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">00:06</span></li>
+    <li role="option" id="transcript-cue-1"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(58px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Kubernetes, also known as K8s was built by
+            Google based on their experience running containers in production. It is now an open source project and is
+            arguably one of the best and most popular container orchestration</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">00:15</span></li>
+    <li role="option" id="transcript-cue-2"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(136px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">technologies out there. In this lecture, we
+            will try to understand Kubernetes at a high level. To understand Kubernetes, we</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">00:31</span></li>
+    <li role="option" id="transcript-cue-3"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(194px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">must first understand two things. Container
+            and orchestration. Once we get familiarized with both of these terms, we would be in a position to
+            understand what Kubernetes</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">00:40</span>
+    </li>
+    <li role="option" id="transcript-cue-4"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(252px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">is capable of. We will start by looking at
+            each of these next. We're now going to look at what containers are. Specifically,</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">00:52</span></li>
+    <li role="option" id="transcript-cue-5"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(310px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">We will look at the most popular container
+            technology out there that is Docker. If you're familiar with Docker already, feel free to skip this lecture
+            and move over to the next</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">01:05</span>
+    </li>
+    <li role="option" id="transcript-cue-6"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(368px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Hello and welcome to this lecture on Docker
+            overview. My name is Mumshad Mannambeth and we are learning Docker fundamentals. In this
+            lecture,</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">01:20</span></li>
+    <li role="option" id="transcript-cue-7"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(426px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">We're going to look at a high level overview
+            on why you need docker and what it can do for you.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">01:29</span></li>
+    <li role="option" id="transcript-cue-8"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(464px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Let me start by sharing how I got introduced
+            to Docker. In one of my previous projects, I had this requirement to set up an end to end stack including
+            various different technologies like a</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">01:36</span></li>
+    <li role="option" id="transcript-cue-9"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(522px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">web server using node JS and database such as
+            mongoDB and messaging system like Redis and an orchestration tool like ansible.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">01:47</span></li>
+    <li role="option" id="transcript-cue-10"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(580px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">We had a lot of issues developing this
+            application with all these different components. First, their compatibility with the underlying operating
+            system. We had to ensure that all these different</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">01:56</span></li>
+    <li role="option" id="transcript-cue-11"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(638px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">services were compatible with the version of
+            the operating system we were planning to use. There have been times when certain version of these services
+            were not compatible with the OS and we</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">02:07</span></li>
+    <li role="option" id="transcript-cue-12"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(696px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">had to go back and look for another OS there
+            was compatible with all these different services. Secondly, we had to check the compatibility between the
+            services and the libraries and dependencies on</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">02:18</span></li>
+    <li role="option" id="transcript-cue-13"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(774px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">the OS. We've had issues where one service
+            requires one version of a dependent library whereas another service required another version. The
+            architecture of our application changed over time.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">02:29</span></li>
+    <li role="option" id="transcript-cue-14"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(832px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">We've had to upgrade to newer version of these
+            components or change the database etc. And every time something changed we had to go through the same
+            process of checking compatibility between</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">02:42</span></li>
+    <li role="option" id="transcript-cue-15"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(910px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">these various components and the underlying
+            infrastructure. This compatibility matrix issue is usually referred to as The Matrix from Hell. Next, every
+            time we had</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">02:55</span></li>
+    <li role="option" id="transcript-cue-16"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(968px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">a new developer on board we found it really
+            difficult to set up a new environment. The new developers had to follow a large set of instructions and run
+            hundreds of commands to finally</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">03:09</span></li>
+    <li role="option" id="transcript-cue-17"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1026px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">set up their environments. They had to make
+            sure they were using the right operating system, the right versions of each of these</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">03:20</span></li>
+    <li role="option" id="transcript-cue-18"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1084px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">components and each developer had to set all
+            that up by himself each time. We also had different development, test and production
+            environments.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">03:27</span></li>
+    <li role="option" id="transcript-cue-19"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1142px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">One developer may be comfortable using one OS
+            and the others maybe using another one. And so we couldn't guarantee that the application that we were
+            building would run the same way in different</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">03:37</span></li>
+    <li role="option" id="transcript-cue-20"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1220px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">environments. And so all of this made our life
+            in developing, building and shipping the application really difficult. So I needed something that could help
+            us with the compatibility issue. Something that would allow us</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">03:49</span></li>
+    <li role="option" id="transcript-cue-21"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1298px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">to modify or change these components without
+            affecting the other components and even modify the underlying operating system as required.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">04:06</span></li>
+    <li role="option" id="transcript-cue-22"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1356px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">And that search landed me on Docker. With
+            Docker, I was able to run each component in a separate container with its own libraries and its own
+            dependencies all on the same VM and the OS but within separate</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">04:15</span></li>
+    <li role="option" id="transcript-cue-23"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1434px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">environments or containers. We just had to
+            build the docker configuration once and all our developers could now get started with</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">04:30</span></li>
+    <li role="option" id="transcript-cue-24"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1492px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">a simple docker run command. Irrespective of
+            what the underlying operating system they run, all they needed to do was to make sure they had docker
+            installed on their systems.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">04:38</span>
+    </li>
+    <li role="option" id="transcript-cue-25"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1550px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">So what are containers? Containers are
+            completely isolated environments. As in they can have their own processes or services, their own networking
+            interfaces, their own mounts just like virtual machines.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">04:54</span></li>
+    <li role="option" id="transcript-cue-26"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1628px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Except they all share the same operating
+            system Kernel. We will look at what that means in a bit. What is also important to note that containers are
+            not new with Docker. Containers have existed for</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">05:08</span></li>
+    <li role="option" id="transcript-cue-27"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1706px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">about 10 years now and some of the different
+            types of containers are LXC, LXD, LXCFS etc.. Docker utilises LXC containers. Setting up these container
+            environments is hard as they are very low level</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">05:20</span></li>
+    <li role="option" id="transcript-cue-28"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1784px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">and that is where a docker offers a high level
+            tool with several powerful functions making it really easy for end users like us. To understand how docker
+            works,</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">05:35</span></li>
+    <li role="option" id="transcript-cue-29"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1842px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Let us revisit some basic concepts of
+            operating systems first. If you look at operating systems like Ubuntu, fedora, suse or centOS,</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">05:48</span></li>
+    <li role="option" id="transcript-cue-30"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1900px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">they all consist of two things. An OS Kernel
+            and a set of software. The operating system kernel is responsible for interacting with the underlying
+            hardware while the OS</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">05:58</span></li>
+    <li role="option" id="transcript-cue-31"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(1958px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">kernel remains the same which is Linux in this
+            case, its the software above it that makes these operating systems different.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">06:10</span></li>
+    <li role="option" id="transcript-cue-32"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2016px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">This software may consist of a different user
+            interface, drivers, compilers, file managers, developer tools etc.. So you have a common Linux kernel shared
+            across all operating systems and some custom software that</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">06:18</span></li>
+    <li role="option" id="transcript-cue-33"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2094px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">differentiates operating systems from each
+            other. We said earlier that Docker containers share the underlying kernel. What does that actually
+            mean?</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">06:33</span></li>
+    <li role="option" id="transcript-cue-34"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2152px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Sharing the kernel. Lets say we have a system
+            with Ubuntu OS with Docker installed on it. Docker can run any flavor of OS on top of it as long as they are
+            all based on the same kernel.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">06:46</span>
+    </li>
+    <li role="option" id="transcript-cue-35"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2210px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">In this case, Linux.If the underlying
+            operating system is Ubuntu, docker can run a container based on another distribution like Debian, Fedora,
+            suse or centOS.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">06:59</span></li>
+    <li role="option" id="transcript-cue-36"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2268px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Each docker container only has the additional
+            software that we just talked about in the previous slide that makes these operating systems different and
+            docker utilizes the underlying kernel of docker host</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">07:11</span></li>
+    <li role="option" id="transcript-cue-37"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2346px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">which works with all the operating systems
+            above. So what is an OS that did not share the same kernel as these? Windows.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">07:24</span></li>
+    <li role="option" id="transcript-cue-38"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2404px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">And so you won't be able to run a Windows
+            based container on a docker host with Linux OS on it.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">07:34</span></li>
+    <li role="option" id="transcript-cue-39"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2442px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">For that you would require docker on a Windows
+            server. You might ask isn't that a disadvantage then. Not being able to run another kernel on the
+            OS.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">07:40</span></li>
+    <li role="option" id="transcript-cue-40"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2500px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">The answer is No, because unlike hypervisors
+            docker is not meant to virtualize and run different operating systems and kernels on the same
+            hardware.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">07:51</span></li>
+    <li role="option" id="transcript-cue-41"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2558px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">The main purpose of docker is to containerize
+            applications and to ship them and run them. So that brings us to the differences between virtual machines
+            and containers.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">08:02</span></li>
+    <li role="option" id="transcript-cue-42"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2616px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Something that we tend to do especially those
+            from a virtualization background. As you can see on the right, In case of docker we have the underlying
+            hardware infrastructure, then the operating system and Docker</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">08:17</span></li>
+    <li role="option" id="transcript-cue-43"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2694px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">installed on the OS. Docker can then manage
+            the containers that run with libraries and dependencies alone. In case of a virtual machine,</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">08:31</span></li>
+    <li role="option" id="transcript-cue-44"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2752px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">we have the OS on the underlying hardware,
+            then the hypervisor like ESX or virtualization of some kind and then the virtual machines. As you can see,
+            each virtual machine has its own operating system inside</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">08:40</span></li>
+    <li role="option" id="transcript-cue-45"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2830px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">it. Then the dependencies and then the
+            application. This overhead causes higher utilization of underlying resources as there are multiple virtual
+            operating</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">08:55</span></li>
+    <li role="option" id="transcript-cue-46"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2888px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">systems and kernels running. The virtual
+            machines also consume higher disk space as each VM is heavy and is usually in gigabytes in size whereas
+            Docker containers are lightweight and are usually in megabytes</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">09:05</span></li>
+    <li role="option" id="transcript-cue-47"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(2966px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">in size. This allows docker containers to boot
+            up faster usually in a matter of seconds whereas virtual machines as we know takes minutes to boot up as it
+            needs to boot up the entire operating system.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">09:17</span></li>
+    <li role="option" id="transcript-cue-48"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3044px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">It is also important to note that docker has
+            less isolation as more resources are shared in containers like the kernel, whereas VMs have complete
+            isolation from each other. Since mediums don't rely on the</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">09:33</span></li>
+    <li role="option" id="transcript-cue-49"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3122px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">underlying operating system or Kernel, you can
+            have different types of operating systems such as Linux based or Windows based on the same hypervisor
+            whereas it is not possible on a single docker host.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">09:47</span></li>
+    <li role="option" id="transcript-cue-50"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3200px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">So these are some differences between the two.
+            So how is it done? There are a lot of containerized versions of applications readily available as of
+            today.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">09:59</span></li>
+    <li role="option" id="transcript-cue-51"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3258px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">So most organizations have their products
+            containerized and available in a public docker registry called docker hub or docker store
+            already.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">10:12</span></li>
+    <li role="option" id="transcript-cue-52"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3316px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">For example, you can find images of most
+            common operating systems, databases and other services and tools. Once you identify the images, you need and
+            you install Docker on your host. Bringing up an application</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">10:22</span></li>
+    <li role="option" id="transcript-cue-53"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3394px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">stack is as easy as running a docker run
+            command with the name of the image. In this case, running a docker run ansible command will run an instance
+            of ansible on the docker host.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">10:37</span></li>
+    <li role="option" id="transcript-cue-54"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3452px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Similarly, run an instance of mongoDB, Redis
+            and nodeJS using the docker run command. When you run nodejs Just point to the location of the code
+            repository on the host. If you need to run multiple instances</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">10:50</span></li>
+    <li role="option" id="transcript-cue-55"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3530px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">of the web service, simply add as many
+            instances as you need and configure a load balancer of some kind</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">11:05</span></li>
+    <li role="option" id="transcript-cue-56"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3588px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">in the front. In case one of the instances was
+            to fail, simply destroy that instance and launch a new</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">11:11</span></li>
+    <li role="option" id="transcript-cue-57"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3626px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">instance. There are other solutions available
+            for handling such cases that we will look at later during this course. We've been talking about images and
+            containers.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">11:18</span></li>
+    <li role="option" id="transcript-cue-58"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3684px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">Let's understand the difference between the
+            two. An image is a package or a template just like a VM template that you might have worked with in
+            the</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">11:30</span></li>
+    <li role="option" id="transcript-cue-59"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3742px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">virtualization world. It is used to create one
+            or more containers. Containers are running instances of images that are isolated and have their own
+            environments and set</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">11:39</span></li>
+    <li role="option" id="transcript-cue-60"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3800px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">of processes. As we have seen before, a lot of
+            products have been dockerized already. In case you cannot find what</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">11:51</span></li>
+    <li role="option" id="transcript-cue-61"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3858px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">you're looking for, you could create an image
+            yourself and push it to the docker hub repository making it available for</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">11:58</span></li>
+    <li role="option" id="transcript-cue-62"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3916px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">the public. If you look at it traditionally,
+            developers developed applications. Then they handed over to upstream to deploy and manage it in production
+            environments.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">12:06</span></li>
+    <li role="option" id="transcript-cue-63"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(3974px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">They do that by providing a set of
+            instructions such as information about how the hosts must be set up, what prerequisites are to be installed
+            on the host and how the dependencies are to be configured</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">12:24</span></li>
+    <li role="option" id="transcript-cue-64"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(4052px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">etc.. The ops team uses this guide to set up
+            the application. Since the ops team did not develop the application</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">12:36</span></li>
+    <li role="option" id="transcript-cue-65"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(4110px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">on their own, They struggle with setting it
+            up. When they hit an issue, they work with the developers to resolve it. With docker, a major portion of
+            work involved in setting</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">12:45</span></li>
+    <li role="option" id="transcript-cue-66"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(4168px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">up the infrastructure is now in the hands of
+            the developers in the form of a docker file. The guide that the developers built</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">12:57</span></li>
+    <li role="option" id="transcript-cue-67"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(4226px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">previously to set up the infrastructure can
+            now easily be put together into a docker file to create an image for the applications.</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">13:05</span></li>
+    <li role="option" id="transcript-cue-68"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(4284px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">This image can now run on any container
+            platform and is guaranteed to run the same way everywhere. So the ops team now can simply use the image to
+            deploy the application. Since the image was already</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">13:14</span></li>
+    <li role="option" id="transcript-cue-69"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(4362px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">working when the developer built it and
+            operations are not modifying it, It continues to work the same way when deployed in production. To learn
+            more about containers,</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">13:28</span></li>
+    <li role="option" id="transcript-cue-70"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(4420px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">check out my other courses "Docker for the
+            Absolute Beginners" and "Dockers Swarm" where you can learn and practice Docker commands and create Docker
+            files.</span><span class="TranscriptCue_lazy_module_timestamp__1137d3b4">13:41</span></li>
+    <li role="option" id="transcript-cue-71"
+        class="TranscriptCue_lazy_module_cueListItem__1137d3b4 TranscriptCue_lazy_module_inactive__1137d3b4"
+        aria-selected="false" style="transform: translateY(4478px);"><span
+            class="TranscriptCue_lazy_module_cueText__1137d3b4" dir="ltr">That's the end of this lecture on containers
+            and docker. See you in the next lecture :)</span><span
+            class="TranscriptCue_lazy_module_timestamp__1137d3b4">13:51</span></li>
+</ul>
